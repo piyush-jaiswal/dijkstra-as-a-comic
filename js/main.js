@@ -221,6 +221,16 @@ var Page = (function () {
 
 $(function() {
     document.getElementById('flipbook').focus();
+    var video = $('#book-cover-front > video')[0];
+    video.muted = true;
+    var promise = video.play();
+    if (promise !== undefined) {
+        promise.then(_ => {
+        }).catch(_ => {
+            video.setAttribute("controlsList", "nofullscreen nodownload disablePictureInPicture");
+            video.setAttribute("controls","controls");
+        });
+    }
     Page.init();
 })
 
