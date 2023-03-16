@@ -1,4 +1,4 @@
-# dijkstra-as-a-comic
+# Dijkstra as a Comic
 
 The famous Dijkstra's Algorithm - explained in the form of a comic. Flipbook can be found [here](https://github.com/piyush-jaiswal/flipbook).
 
